@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dastarkhan 2036 — Aziz's Future Vision</title>
+    <meta name="description" content="A future vision for 2036: a Central Asian table in Xi'an, built with data science, four languages and a lot of bread.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🥘%3C/text%3E%3C/svg%3E">
+    <!-- Fonts are loaded with @import at the very top of style.css (Fraunces + Spline Sans Mono) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- canvas: decorative steam rising from a pot (see script.js) -->
+        <canvas id="steam" width="260" height="300" aria-hidden="true"></canvas>
+
+        <p class="kicker">Future Vision · MEDIART213 · Fall 2026</p>
+
+        <!-- h1: used ONCE. It is the title of the whole document. -->
+        <h1>Dastarkhan <span class="year">2036</span></h1>
+
+        <p class="deck">
+            A table, set ten years from now, for everyone who has ever been
+            hungry for a place that was not on the map.
+        </p>
+
+        <p class="byline">
+            By <strong>Aziz</strong> · <time datetime="2026-11">November 2026</time> · Duke Kunshan University
+        </p>
+
+        <nav aria-label="Sections of this vision">
+            <a href="#machine">01 · What a machine can't dream</a>
+            <a href="#memory">02 · What gets written into the past</a>
+            <a href="#day">03 · A day in 2036</a>
+        </nav>
+    </header>
+
+    <div class="ikat" role="presentation"></div>
+
+    <main>
+
+        <!-- ───────────── ARTICLE 1 ───────────── -->
+        <article id="machine">
+            <!-- h2: the three big movements of the vision -->
+            <h2><span class="num">01</span> How will I begin to dream something no machine can dream?</h2>
+
+            <p>
+                I begin with a smell. A model can list the ingredients of plov, but it has never stood in
+                a kitchen at the exact second cumin hits hot oil and a whole apartment goes quiet because
+                everyone knows what is coming. That second is where my dreams start:
+                <mark>with homesickness, the one dataset nobody has scraped.</mark>
+            </p>
+
+            <p>
+                I study Data Science and Computer Science, so I know how a machine dreams: it averages.
+                It looks at a million tables and hands back the most likely one. I want the
+                <em>least</em> likely one. A table in Xi'an where a student from Tashkent, one from Almaty and
+                one from Bishkek argue over whose lagman is correct, and all three are right.
+            </p>
+
+            <p>
+                I think in Russian, work in English and Uzbek, and am still earning my Chinese
+                (<span lang="zh">西安</span> is the first city I want to get right). The dreams that matter
+                live in the gaps between those languages. <em>Dastarkhan</em> does not translate to “table.”
+                It is the cloth you unroll, and the promise that whoever sits down will be fed.
+            </p>
+
+            <!-- h3: a sub-question that belongs INSIDE section 01 -->
+            <h3>If I realize my hopes through AI, how do I keep it faithful to my will?</h3>
+
+            <p>
+                I treat AI as a sous-chef, never the chef. It may count, forecast and translate.
+                It may not decide what deserves to be served.
+            </p>
+
+            <details>
+                <summary>My three kitchen rules for AI</summary>
+                <!-- h4: the smallest unit of meaning, nested under the h3 -->
+                <h4>House rules</h4>
+                <ol>
+                    <li><strong>AI proposes, I taste.</strong> Models can forecast how much dough to make.
+                        Only a person decides what goes on the menu.</li>
+                    <li><strong>No dish without a name.</strong> Every recipe credits the family, city or region
+                        it came from, so tradition is never flattened into “Asian fusion.”</li>
+                    <li><strong>If I can't explain it, it doesn't enter the kitchen.</strong> A model that
+                        recommends something must show me why, in code I can read.</li>
+                </ol>
+            </details>
+        </article>
+
+        <!-- ───────────── ARTICLE 2 ───────────── -->
+        <article id="memory">
+            <h2><span class="num">02</span> If memory is built from shared stories, which dreams do I want written into the past?</h2>
+
+            <p>
+                When 2036 looks back at 2026, I want the record to say that a Central Asian restaurant
+                opened in Xi'an because students were tired of describing their food to people who had never
+                tasted it. I want it remembered as <mark>“the place with the real non”</mark>, the address
+                passed between first-years during their first homesick week.
+            </p>
+
+            <!-- picture: art-directed banner, with a plain img fallback and real alt text -->
+            <figure class="banner">
+                <picture>
+                    <source media="(min-width: 700px)" srcset="assets/images/past%20stories.png">
+                    <img src="assets/images/blur.png" alt="Layered ribbons of pink, green and blue reading “Stories for a past we can dream about”" loading="lazy">
+                </picture>
+                <figcaption>Stories for a past we can dream about.</figcaption>
+            </figure>
+
+            <!-- aside: supporting content, not the main argument -->
+            <aside>
+                <h3>Why Xi'an?</h3>
+                <p>
+                    Xi'an was once Chang'an, the eastern end of the Silk Road. Opening there is not an
+                    import. It is a return.
+                </p>
+
+                <!-- figure + figcaption + inline SVG (embedded content) -->
+                <figure>
+                    <svg viewBox="0 0 600 220" role="img" aria-labelledby="routeTitle routeDesc">
+                        <title id="routeTitle">Route from Central Asia to Xi'an</title>
+                        <desc id="routeDesc">A dashed line runs east from Samarkand through Tashkent and Kashgar to Xi'an, with a small arrow showing that food travels east.</desc>
+
+                        <path class="route" d="M70 150 C 120 70, 170 70, 190 100 S 290 170, 340 125 S 470 60, 540 105" />
+
+                        <g class="stop" tabindex="0" data-dish="Samarkand · non: round, stamped loaves that taste like the morning."><circle cx="70"  cy="150" r="9" /><text x="70"  y="184" text-anchor="middle">Samarkand</text></g>
+                        <g class="stop" tabindex="0" data-dish="Tashkent · plov: the one dish every family insists it cooks correctly."><circle cx="190" cy="100" r="9" /><text x="190" y="75"  text-anchor="middle">Tashkent</text></g>
+                        <g class="stop" tabindex="0" data-dish="Kashgar · laghman: hand-pulled noodles that cross every border on this map."><circle cx="340" cy="125" r="9" /><text x="340" y="160" text-anchor="middle">Kashgar</text></g>
+                        <g class="stop home" tabindex="0" data-dish="Xi'an · the end of the road, where hand-pulled noodles already feel like family."><circle cx="540" cy="105" r="13" /><text x="540" y="140" text-anchor="middle">Xi'an · 西安</text></g>
+
+                        <text class="arrow" x="300" y="30" text-anchor="middle">plov, samsa, non, lagman travel east →</text>
+                    </svg>
+                    <figcaption>Schematic route, not to scale. Hover or tab to a city.</figcaption>
+                    <p id="routeNote" class="note" aria-live="polite">Hover or tab to a stop to see what I'd serve from there.</p>
+                </figure>
+            </aside>
+
+            <h3>What remains of me when all my stories are rewritten?</h3>
+
+            <p>
+                Recipes survive retelling better than names do. If everything else gets edited (my major, my
+                city, my résumé), what should remain is a way of paying attention: noticing who is eating
+                alone, and pulling out a chair.
+            </p>
+        </article>
+
+        <!-- ───────────── ARTICLE 3 ───────────── -->
+        <article id="day">
+            <h2><span class="num">03</span> What does an ordinary day in 2036 sound, look and move like?</h2>
+
+            <p>
+                Relationships, places, time, rhythm and movement, answered as one day.
+            </p>
+
+            <!-- audio: the sound of 05:30 -->
+            <figure class="sound">
+                <audio controls preload="none">
+                    <source src="assets/audio/rhythm-0530.mp3" type="audio/mpeg">
+                    <source src="assets/audio/rhythm-0530.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <figcaption>Press play: the rhythm of 05:30.</figcaption>
+            </figure>
+
+            <!-- ordered list: the order of the day IS the meaning -->
+            <ol class="timeline">
+                <li>
+                    <time datetime="05:30">05:30</time>
+                    <span><strong>Sound.</strong> The clack of the oven lid and bread slapped against hot clay.
+                        The day's rhythm is set by something rising before I do.</span>
+                </li>
+                <li>
+                    <time datetime="08:00">08:00</time>
+                    <span><strong>Movement.</strong> I cycle along the old city wall to the market, slowly,
+                        with the whole city laid out below me.</span>
+                </li>
+                <li>
+                    <time datetime="11:00">11:00</time>
+                    <span><strong>Time.</strong> Two quiet hours of Python. One small script predicts tonight's dough so
+                        nothing is thrown away. After that I only listen: my cooks' stories come first.</span>
+                </li>
+                <li>
+                    <time datetime="14:00">14:00</time>
+                    <span><strong>Relationships.</strong> Staff meal. The people who make my life meaningful are
+                        fed first, and I nurture them by listening before I plan.</span>
+                </li>
+                <li>
+                    <time datetime="19:00">19:00</time>
+                    <span><strong>Aesthetics.</strong> Low tables, indigo tile and patterned cloth, a room that
+                        came to look this way because the people who ate there kept bringing pieces of home to it.</span>
+                </li>
+                <li>
+                    <time datetime="23:00">23:00</time>
+                    <span><strong>Language.</strong> One notebook, four languages, switching mid-sentence the moment
+                        a word fits better somewhere else. <!-- ADD ONE REAL DETAIL HERE: a dish, a market, a person from your own life --></span>
+                </li>
+            </ol>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>
+            Web-Based Multimedia Design · <em>Future vision</em> · Fall 2026
+        </p>
+        <p class="fine">
+            Set in Fraunces and Spline Sans Mono (Google Fonts). The 05:30 sound is a synthesized sketch.
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
